@@ -11,6 +11,8 @@ mainmenu() {
 	Chose an option: "
 	read -r ans
 	case $ans in
+	5)
+		shutdown --reboot n "System rebooting in 1 minute"
 	4)
 		echo "starting webserver"
 		python web/webserver.py &
@@ -31,7 +33,7 @@ mainmenu() {
 		mainmenu
 		;;
 	1)
-		echo "*** stopping my test server***"
+		echo "*** stopping mush server***"
 		killall python
 		echo "done" 
 		sleep 2
