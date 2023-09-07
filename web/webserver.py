@@ -10,4 +10,10 @@ class MyRequestHandler(http.server.SimpleHTTPRequestHandler):
 Handler = MyRequestHandler
 server = socketserver.TCPServer(('0.0.0.0', 8080), Handler)
 
-server.serve_forever()
+try:
+	server.serve_forever()
+except KeyboardInterrupt:
+	server.server_close()
+	echo "Server Closed"
+    sleep 3
+    
