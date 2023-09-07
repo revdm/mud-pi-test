@@ -16,6 +16,6 @@ try:
 	server.serve_forever()
 except KeyboardInterrupt:
 	server.server_close()
-    echo "Server Closed"
+    print("Server Closed")
     
     
