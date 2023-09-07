@@ -17,6 +17,7 @@ mainmenu() {
 		echo "Set to reboot"
 		sleep 60
 		mainmenu
+		;;
 	4)
 		echo "starting webserver"
 		python web/webserver.py &
