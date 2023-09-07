@@ -17,5 +17,5 @@ try:
 except KeyboardInterrupt:
 	server.server_close()
 	# echo "Server Closed"
-    sleep 3
+    
     
