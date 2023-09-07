@@ -21,7 +21,7 @@ mainmenu() {
 	3)
 		echo "starting mush server"
 		cd ..
-		python simplemud2.py &
+		python simplemud.py &
 		echo "did it"
 		sleep 3
 		mainmenu
