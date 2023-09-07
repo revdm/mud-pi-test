@@ -3,6 +3,7 @@
 mainmenu() {
 	echo -ne "
 	MAIN MENU
+	5) reboot
 	4) start webserver
 	3) start mush server
 	2) heh
@@ -12,7 +13,10 @@ mainmenu() {
 	read -r ans
 	case $ans in
 	5)
-		shutdown --reboot n "System rebooting in 1 minute"
+		shutdown -r 1 "System rebooting in 1 minute"
+		echo "Set to reboot"
+		sleep 60
+		mainmenu
 	4)
 		echo "starting webserver"
 		python web/webserver.py &
