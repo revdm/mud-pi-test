@@ -8,6 +8,6 @@ class MyRequestHandler(http.server.SimpleHTTPRequestHandler):
         return http.server.SimpleHTTPRequestHandler.do_GET(self)
 
 Handler = MyRequestHandler
-server = socketserver.TCPServer(('0.0.0.0', 80), Handler)
+server = socketserver.TCPServer(('0.0.0.0', 8080), Handler)
 
 server.serve_forever()
