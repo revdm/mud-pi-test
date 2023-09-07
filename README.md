@@ -16,6 +16,8 @@ Added
 
 	3 rooms
 	shout
+	webserver to host butten html for telnet
+	start script
 
 
 
