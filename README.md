@@ -15,9 +15,10 @@ prompt and start the telnet client by running:
 	
 	
 
-Added :
-2 rooms
-shout
+Added 
+
+	2 rooms
+	shout
 
 
 
