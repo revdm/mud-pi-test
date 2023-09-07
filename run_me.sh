@@ -13,7 +13,7 @@ mainmenu() {
 	read -r ans
 	case $ans in
 	5)
-		shutdown -r 1 "System rebooting in 1 minute"
+		sudo shutdown -r 1 "System rebooting in 1 minute"
 		echo "Set to reboot"
 		sleep 60
 		mainmenu
