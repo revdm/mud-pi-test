@@ -11,14 +11,14 @@ From the terminal, change to the directory containing the script and run
 prompt and start the telnet client by running:
 
 	telnet <ip address> 1234
+	change port and ip in mudserver.py search "self._listen_socket.bind(("0.0.0.0", 1234))"
 	
 	
-added gold
-added shout
-added 2 new rooms
+
 
 
 
 
 
 MUD Pi was written by Mark Frimston
+	Edited by revdm
