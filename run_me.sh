@@ -10,8 +10,16 @@ mainmenu() {
 	Chose an option: "
 	read -r ans
 	case $ans in
+	4)
+		echo "starting webserver"
+		cd web
+		python webserver.py &
+		echo "did it"
+		sleep 3
+		mainmenu
+		;;
 	3)
-		echo "starting ya shit"
+		echo "starting mush server"
 		python simplemud.py &
 		echo "did it"
 		sleep 3
