@@ -13,15 +13,15 @@ mainmenu() {
 	case $ans in
 	4)
 		echo "starting webserver"
-		cd web
-		python webserver.py &
+		python web/webserver.py &
 		echo "did it"
 		sleep 3
 		mainmenu
 		;;
 	3)
 		echo "starting mush server"
-		python simplemud.py &
+		cd ..
+		python simplemud2.py &
 		echo "did it"
 		sleep 3
 		mainmenu
