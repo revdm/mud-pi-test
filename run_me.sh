@@ -3,7 +3,8 @@
 mainmenu() {
 	echo -ne "
 	MAIN MENU
-	3) start server
+	4) start webserver
+	3) start mush server
 	2) heh
 	1) kill server
 	0) exit the thing
