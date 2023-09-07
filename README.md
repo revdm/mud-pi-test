@@ -14,7 +14,7 @@ From the terminal, change to the directory containing the script and run
 
 Added 
 
-	2 rooms
+	3 rooms
 	shout
 
 
