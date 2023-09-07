@@ -6,7 +6,7 @@ class MyRequestHandler(http.server.SimpleHTTPRequestHandler):
         if self.path == '/':
             self.path = '/html/index.html'
         if self.path == '/testme':
-            self.path = 'test.html'
+            self.path = '/html/test.html'
         return http.server.SimpleHTTPRequestHandler.do_GET(self)
 
 Handler = MyRequestHandler
