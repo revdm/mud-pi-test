@@ -237,6 +237,7 @@ while True:
                 # send the player a message telling them where they are now
                 mud.send_message(id, "You arrive at '{}'".format(
                                                           players[id]["room"]))
+                                                          mud.send_message(id, rm["description"])
 
             # the specified exit wasn't found in the current room
             else:
