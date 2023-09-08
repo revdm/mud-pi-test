@@ -15,12 +15,14 @@ From the terminal, change to the directory containing the script and run
 Added 
 
 	3 rooms
-	shout
 	webserver to host butten html for telnet
 	start script
 	motd
 	tell how much gold u have
 	desc when u change rooms now appears
+	gold sorta implimented
+	shout (text)
+	gold command to should how much gold u have
 
 
 
