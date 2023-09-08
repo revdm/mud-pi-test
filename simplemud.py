@@ -147,7 +147,7 @@ while True:
 
             # send the player back the list of possible commands
             mud.send_message(id, "Commands:")
-            mud.send_message(id, "  gold"
+            mud.send_message(id, "  gold, "
                                  + "e.g. 'proclaim how mych gold u have'")
             mud.send_message(id, "  say <message>  - Says something out loud, "
                                  + "e.g. 'say Hello'")
