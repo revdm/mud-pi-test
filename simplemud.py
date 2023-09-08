@@ -47,7 +47,7 @@ rooms = {
         "exits": {"inside": "Tavern"},
     },
     "Bathroom": {
-        "description": "You're standing outside a bathroom. It smells BAD....",
+        "description": "You're standing outside a outhouse. It smells BAD....",
         "exits": {"inside": "Tavern"},
     }
 }
