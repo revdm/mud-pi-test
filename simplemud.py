@@ -268,7 +268,7 @@ while True:
                    # mud.send_message(pid,"i have " ,players[pid]["gold"],+ " this much gold: {}")
                     #.format(
                                               #  ))
-                    mud.send_message(pid,"i have this much gold:  ".format(players[id]["name"]))
+                    mud.send_message(pid,"i have this much gold:  ".format(players[id]["name"], players[id]["gold"]))
         # some other, unrecognised command                                        
         else:
             # send back an 'unknown command' message
