@@ -75,7 +75,9 @@ while True:
             "room": None,
             "gold": "3",
         }
-
+        # sends motd
+        mud.send_message(id,'                                                   motd')
+        time.sleep(5)
         # send the new player a prompt for their name
         mud.send_message(id, "What shall we call You?")
 

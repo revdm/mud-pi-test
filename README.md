@@ -18,6 +18,7 @@ Added
 	shout
 	webserver to host butten html for telnet
 	start script
+	motd
 
 
 
