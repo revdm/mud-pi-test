@@ -84,7 +84,7 @@ while True:
             "gold": "3",
         }
         # sends motd
-        mud.send_message(id,'                                                   motd')
+        #mud.send_message(id,'                                                   motd')
         config = configparser.ConfigParser()
         config.readfp(open(r'motd.ini'))
         path1 = config.get('My Section', 'path2')
