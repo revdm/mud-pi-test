@@ -22,7 +22,6 @@ author: Mark Frimston - mfrimston@gmail.com
 """
 #added
 import configparser
-#goldamount = ()
 
 
 
