@@ -84,10 +84,9 @@ while True:
             "gold": "3",
         }
         # sends motd
-        #mud.send_message(id,'                                                   motd')
         config = configparser.ConfigParser()
         config.read_file(open(r'motd.ini'))
-        path1 = config.get('My Section', 'motd1' /n 'spanky')
+        path1 = config.get('My Section', 'motd1')
         mud.send_message(id,path1)
         time.sleep(5)
         # send the new player a prompt for their name
