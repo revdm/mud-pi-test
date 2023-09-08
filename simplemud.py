@@ -261,12 +261,13 @@ while True:
             # go through every player in the game
             for pid, pl in players.items():
                 # if they're in the same room as the player
-                goldamount(goldamount) = players[pid]["gold"]
+                goldamount = players[pid]["gold"]
                 if players[pid]["room"] == players[id]["room"]:
-            #print(goldamount)
+                    print(goldamount)
+          
                     # send them a message telling them what the player said
                                               #  ))
-                    mud.send_message(pid,"i have this much gold: %goldamount ".format(players[id]["name"],params))
+                    mud.send_message(pid,"i have this much gold: (@ {goldamount} @) ".format(players[id]["name"],params))
         # some other, unrecognised command                                        
         else:
             # send back an 'unknown command' message
