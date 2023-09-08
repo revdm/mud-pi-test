@@ -89,7 +89,7 @@ while True:
         config.read_file(open(r'motd.ini'))
         path1 = config.get('My Section', 'motd1')
         mud.send_message(id,path1)
-        time.sleep(5)
+        #time.sleep(5)
         # send the new player a prompt for their name
         mud.send_message(id, "What shall we call You?")
 
