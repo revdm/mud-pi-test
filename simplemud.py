@@ -266,7 +266,8 @@ while True:
                     
           
                     # send them a message telling them what the player said
-                    mud.send_message(id,f"i have this much gold: {goldamount} ".format(players[pid]["name"],params))
+                    mud.send_message(pid, f"{players[id]['name']} shouts at you bitches: i have {goldamount} pieces of gold ".format(
+                                                players[id]["name"], params))
         # some other, unrecognised command                                        
         else:
             # send back an 'unknown command' message
