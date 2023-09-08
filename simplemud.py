@@ -262,8 +262,8 @@ while True:
                 # if they're in the same room as the player
                 if players[pid]["room"] == players[id]["room"]:
                     # send them a message telling them what the player said
-                    mud.send_message(pid, "{} i have this much gold: {}".format(
-                                                players[id]["name"],players[id]["gold"]))
+                    mud.send_message(pid, "{} i have ",players[id]["gold"] + " this much gold: {}".format(
+                                                players[id]["name"]))
                                                 
         # some other, unrecognised command                                        
         else:
