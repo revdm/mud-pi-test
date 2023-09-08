@@ -19,6 +19,8 @@ Added
 	webserver to host butten html for telnet
 	start script
 	motd
+	tell how much gold u have
+	desc when u change rooms now appears
 
 
 
