@@ -22,6 +22,7 @@ author: Mark Frimston - mfrimston@gmail.com
 """
 #added
 import configparser
+goldamount = ()
 
 
 
@@ -260,12 +261,14 @@ while True:
             # go through every player in the game
             for pid, pl in players.items():
                 # if they're in the same room as the player
+                goldamount = players[pid]["gold"]
                 if players[pid]["room"] == players[id]["room"]:
+            #print(goldamount)
                     # send them a message telling them what the player said
-                   # mud.send_message(pid,"i have " ,players[pid]["gold"],+ " this much gold: {}".format(
+                   # mud.send_message(pid,"i have " ,players[pid]["gold"],+ " this much gold: {}")
+                    #.format(
                                               #  ))
-                                                mud.send_message(pid, "i have this much gold:".format(
-                                                players[id]["name"], players[id]["gold"]))
+                    mud.send_message(pid, "i have this much gold:  " goldamount.format(players[id]["name"]))
         # some other, unrecognised command                                        
         else:
             # send back an 'unknown command' message
