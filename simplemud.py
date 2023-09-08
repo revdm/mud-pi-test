@@ -20,7 +20,15 @@ Some ideas for things to try adding:
 
 author: Mark Frimston - mfrimston@gmail.com
 """
+#added
+import configparser
 
+
+
+
+
+
+#stock
 import time
 
 # import the MUD server class
@@ -77,6 +85,11 @@ while True:
         }
         # sends motd
         mud.send_message(id,'                                                   motd')
+        config = ConfigParser.ConfigParser()
+config.readfp(open(r'motd.ini'))
+path1 = config.get('My Section', 'path2')
+        time.sleep(5)
+        mud.send_message(id,path1)
         time.sleep(5)
         # send the new player a prompt for their name
         mud.send_message(id, "What shall we call You?")
