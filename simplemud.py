@@ -49,6 +49,8 @@ players = {}
 # start the server
 mud = MudServer()
 
+
+
 # main game loop. We loop forever (i.e. until the program is terminated)
 while True:
 
@@ -71,7 +73,7 @@ while True:
         players[id] = {
             "name": None,
             "room": None,
-            "gold": None,
+            "gold": "3",
         }
 
         # send the new player a prompt for their name
@@ -237,9 +239,18 @@ while True:
                     # send them a message telling them what the player said
                     mud.send_message(pid, "{} shouts at you bitches: {}".format(
                                                 players[id]["name"], params))
+         # post how much gold u have                                              
                                                        
-                                                       
-     
+        elif command == "gold":
+            # go through every player in the game
+            for pid, pl in players.items():
+                # if they're in the same room as the player
+                if players[pid]["room"] == players[id]["room"]:
+                    # send them a message telling them what the player said
+                    mud.send_message(pid, "{} i have this mand gold: {}".format(
+                                                players[id]["name"],players[id]["gold"]))
+                                                
+        # some other, unrecognised command                                        
         else:
             # send back an 'unknown command' message
             mud.send_message(id, "Unknown command '{}'".format(command))
