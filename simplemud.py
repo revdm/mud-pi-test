@@ -86,7 +86,7 @@ while True:
         # sends motd
         #mud.send_message(id,'                                                   motd')
         config = configparser.ConfigParser()
-        config.readfp(open(r'motd.ini'))
+        config.read_file(open(r'motd.ini'))
         path1 = config.get('My Section', 'motd1')
         mud.send_message(id,path1)
         time.sleep(5)
